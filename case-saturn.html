@@ -96,6 +96,16 @@
   .photo{aspect-ratio:4/3;border-radius:12px;border:1px solid var(--line);background:repeating-linear-gradient(135deg,#e9edf1,#e9edf1 14px,#eef2f5 14px,#eef2f5 28px);display:flex;align-items:flex-end;justify-content:space-between;padding:12px;color:#8a949d;font-size:.78rem}
   .quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*4);font-style:italic;color:#3c454e;font-size:1.05rem;margin-top:calc(var(--u)*3)}
   .quote cite{display:block;font-style:normal;font-size:.88rem;color:var(--muted);margin-top:12px;font-weight:600}
+  .sched{width:100%;border-collapse:collapse;margin-top:calc(var(--u)*2);font-size:.95rem;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .sched th,.sched td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line)}
+  .sched th{color:var(--muted);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;background:var(--bg-alt)}
+  .sched td:last-child{font-weight:700;white-space:nowrap}
+  .sched tr:last-child td{border-bottom:0;border-top:2px solid var(--graphite);font-weight:800;color:var(--graphite)}
+  .proj{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*2.5);margin-top:calc(var(--u)*2)}
+  .proj .p{background:#fff;border:1px solid var(--line);border-radius:12px;padding:calc(var(--u)*2.5);position:relative}
+  .proj .p .s{font-weight:900;color:var(--accent);font-size:1.3rem}
+  .proj .p h3{font-size:1rem;margin:4px 0 4px}.proj .p p{font-size:.9rem;color:var(--muted)}
+  @media(max-width:880px){.proj{grid-template-columns:1fr 1fr}}@media(max-width:520px){.proj{grid-template-columns:1fr}}
 
   .cta{background:radial-gradient(800px 360px at 15% 0%,rgba(255,91,46,.12),transparent 55%),var(--graphite-2);color:#fff;text-align:center}
   .cta h2{color:#fff}.cta p{color:#aeb8c2;max-width:54ch;margin:8px auto calc(var(--u)*3)}
@@ -239,6 +249,28 @@
   </div>
 </section>
 
+<!-- 5b. ГРАФИК -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">График</span>
+    <h2>Сроки по этапам</h2>
+    <p style="max-width:66ch">Реальный график согласуем под дату заказчика. Ниже — структура графика по «Сатурну»; точные длительности и даты — из проектной документации. <span class="todo">[уточнить из интервью: длительность каждого этапа и общий срок]</span></p>
+    <table class="sched">
+      <tr><th>Этап</th><th>Длительность</th></tr>
+      <tr><td>1. Подготовка площадки</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>2. Земляные работы и фундаменты</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>3. Несущий каркас (2 корпуса)</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>4. Ограждающие конструкции и кровля</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>5. Промышленные полы</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>6. Инженерные системы</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>7. Отделка и АБК</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>8. Благоустройство</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>9. Пусконаладка и ЗОС</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>Общий срок СМР до ЗОС</td><td><span class="todo">[уточнить]</span></td></tr>
+    </table>
+  </div>
+</section>
+
 <!-- 7. КОНТРОЛЬ -->
 <section>
   <div class="wrap">
@@ -283,6 +315,20 @@
   </div>
 </section>
 
+<!-- 9b. ЭКОНОМИЧЕСКИЙ ЭФФЕКТ -->
+<section style="background:var(--bg-alt)">
+  <div class="wrap">
+    <span class="eyebrow">Экономический эффект</span>
+    <h2>Что заказчик выиграл — в деньгах и времени</h2>
+    <div class="pgrid">
+      <div class="pcard"><h3>Логистика сети запущена</h3><p>Складской комплекс заработал на сеть — товарные потоки магазинов не встали. Эффект от своевременного запуска: <span class="todo">[уточнить]</span></p></div>
+      <div class="pcard"><h3>Смета без перерасхода</h3><p>Стоимость зафиксирована — без доплат «по ходу». Это защита от типичного для рынка роста сметы на 20–40%. <span class="todo">[уточнить точную сумму/смету]</span></p></div>
+      <div class="pcard"><h3>Проект доведён, а не заморожен</h3><p>Сырой проект мог остановить стройку целиком. Закрыли недостающие разделы и не сорвали объект — заказчик не потерял вложенное.</p></div>
+      <div class="pcard"><h3>Один подрядчик = меньше издержек на управление</h3><p>Единый центр ответственности вместо координации десятка подрядчиков своими силами.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- 10. ПРУФЫ -->
 <section>
   <div class="wrap">
@@ -295,6 +341,21 @@
     </div>
     <div class="quote">«<span class="todo">[Отзыв руководителя проекта «Сатурн» — добавим после интервью]</span>»
       <cite>— Еремина Ирина Николаевна, руководитель проекта, «Сатурн» (готова дать референс)</cite></div>
+  </div>
+</section>
+
+<!-- 11. КАК У ВАС -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Если у вас похожая задача</span>
+    <h2>Как пройдёт работа с «Вектором»</h2>
+    <div class="proj">
+      <div class="p"><div class="s">1</div><h3>Обсудим объект</h3><p>Посмотрим, что есть: участок, проект (даже сырой), задачу и желаемый срок.</p></div>
+      <div class="p"><div class="s">2</div><h3>Оценка за 3 дня</h3><p>Дадим предварительную смету и сроки, честно разделим зоны «Вектора» и партнёров.</p></div>
+      <div class="p"><div class="s">3</div><h3>Зафиксируем в договоре</h3><p>Стоимость и срок — в договоре, с ответственностью за их соблюдение.</p></div>
+      <div class="p"><div class="s">4</div><h3>Построим до ЗОС</h3><p>Единый центр ответственности, контроль качества, доведение до ввода в эксплуатацию.</p></div>
+    </div>
+    <p style="margin-top:calc(var(--u)*3);max-width:66ch;color:#3c454e">Даже если проект непроработан или вы расстались с прошлым подрядчиком — возьмёмся и доведём объект до ЗОС, как на «Сатурне».</p>
   </div>
 </section>
 
