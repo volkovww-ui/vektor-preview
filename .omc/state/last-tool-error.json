@@ -1,0 +1,7 @@
+{
+  "tool_name": "mcp__playwright__browser_navigate",
+  "tool_input_preview": "{\"url\":\"https://volkovww-ui.github.io/vektor-preview/index.html\"}",
+  "error": "### Error\nError: Browser is already in use for /Users/vitalijvolkov/Library/Caches/ms-playwright/mcp-chrome-0152762, use --isolated to run multiple instances of the same browser",
+  "timestamp": "2026-06-03T10:16:32.929Z",
+  "retry_count": 1
+}

@@ -160,7 +160,8 @@
     background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
     background-size:28px 28px;position:relative;display:flex;align-items:flex-end;justify-content:space-between;
     padding:16px;color:#9aa6b1;font-family:var(--font-mono);font-size:.74rem}
-  .case .ph::after{content:"";position:absolute;left:16px;top:16px;width:22px;height:22px;border-top:2px solid var(--accent);border-left:2px solid var(--accent)}
+  .case .ph::after{content:"";position:absolute;left:16px;top:16px;width:22px;height:22px;border-top:2px solid var(--accent);border-left:2px solid var(--accent);z-index:2}
+  .case .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
   .case .body{padding:calc(var(--u)*3.5) calc(var(--u)*3);display:flex;flex-direction:column;gap:12px;flex:1}
   .case h3{font-size:1.5rem}
   .case .row{display:flex;gap:24px;margin-top:8px;flex-wrap:wrap}
@@ -321,7 +322,14 @@
   .photo{aspect-ratio:4/3;border-radius:var(--radius);border:1px solid var(--line);background-color:var(--graphite);
     background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
     background-size:26px 26px;position:relative;display:flex;align-items:flex-end;justify-content:space-between;padding:12px;color:#9aa6b1;font-family:var(--font-mono);font-size:.74rem}
-  .photo::after{content:"";position:absolute;left:12px;top:12px;width:18px;height:18px;border-top:2px solid var(--accent);border-left:2px solid var(--accent)}
+  .photo::after{content:"";position:absolute;left:12px;top:12px;width:18px;height:18px;border-top:2px solid var(--accent);border-left:2px solid var(--accent);z-index:3}
+  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .photo .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;background:linear-gradient(transparent,rgba(13,17,21,.86));color:#fff;font-family:var(--font-mono);font-size:.72rem;padding:26px 12px 9px;letter-spacing:.02em;line-height:1.4}
+  /* case hero photo band */
+  .hero-shot{margin-top:calc(var(--u)*4.5);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;position:relative;aspect-ratio:21/9;background:var(--graphite)}
+  .hero-shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .hero-shot::after{content:"";position:absolute;left:18px;top:18px;width:28px;height:28px;border-top:3px solid var(--accent);border-left:3px solid var(--accent)}
+  .hero-shot .cap{position:absolute;right:0;bottom:0;background:linear-gradient(270deg,rgba(13,17,21,.82),transparent);color:#fff;font-family:var(--font-mono);font-size:.74rem;padding:24px 16px 12px 40px;letter-spacing:.02em}
   /* schedule + projection (added blocks) */
   .sched{width:100%;border-collapse:collapse;margin-top:calc(var(--u)*2);font-size:.95rem;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
   .sched th,.sched td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line)}
@@ -477,7 +485,7 @@
     </div>
     <div class="cases">
       <article class="case">
-        <div class="ph"><span>фото объекта</span><span>скоро</span></div>
+        <div class="ph"><img src="assets/img/saturn/warehouse-done.jpg" alt="Складской комплекс «Сатурн» — готовый корпус" loading="lazy"></div>
         <div class="body">
           <span class="chip">Складской комплекс для сети · флагман</span>
           <h3>Сатурн</h3>
@@ -592,7 +600,7 @@
     <div class="grid-4">
       <div class="card"><span class="ic">📈</span><h3>Опыт на масштабе</h3><p>Реализован складской комплекс «Сатурн» порядка 1 млрд ₽ — мы тянем большие, сложные объекты.</p></div>
       <div class="card"><span class="ic">👷</span><h3>Сильная техническая команда</h3><p>Технический директор и инженеры, которые ведут объект и отвечают за решения, а не «менеджеры по телефону».</p></div>
-      <div class="card"><span class="ic">📋</span><h3>Допуски и документы</h3><p>СРО, лицензии, работа по нормам. Готовы к проверке: открытое юрлицо, прозрачная история.</p></div>
+      <div class="card"><span class="ic">📋</span><h3>Допуски и документы</h3><p>Член саморегулируемой организации с допуском к генеральному подряду по договорам до 500 млн ₽, ответственность застрахована. Открытое юрлицо — готовы к проверке службой безопасности.</p></div>
       <div class="card"><span class="ic">🛡</span><h3>Ответственность в договоре</h3><p>Фиксированная смета, закреплённые сроки, гарантийные обязательства — на бумаге, а не на словах.</p></div>
     </div>
   </div>
@@ -685,7 +693,7 @@
       <details class="qa"><summary>А если у нас сырой или неполный проект?<span class="ic">+</span></summary><div class="ans"><p>Беремся. На объекте «Сатурн» проект достался непроработанным — часть разделов отсутствовала. Мы закрыли недостающее вместе с проектировщиками и довели объект до ЗОС. Если вы расстались с прошлым подрядчиком — принимаем недострой и доводим до ввода.</p></div></details>
       <details class="qa"><summary>Какого масштаба объекты вы строите?<span class="ic">+</span></summary><div class="ans"><p>От 1 000 до 50 000 м². Флагман — складской комплекс «Сатурн» порядка 12 000 м² и около 1 млрд ₽ бюджета. Строим склады, производственные цеха, логистические комплексы, ангары и объекты Light Industrial.</p></div></details>
       <details class="qa"><summary>Чем вы лучше тех, кто предлагает дешевле?<span class="ic">+</span></summary><div class="ans"><p>Самая низкая цена на тендере — частый сигнал риска: подрядчик заходит дёшево, а потом добирает доплатами или экономит на качестве и сроках. Мы продаём не низкую цену, а предсказуемый результат: фиксированную смету, соблюдённый срок и сданный объект.</p></div></details>
-      <details class="qa"><summary>Мы вас не знаем — как убедиться, что вам можно доверять?<span class="ic">+</span></summary><div class="ans"><p>Открытое юрлицо для проверки службой безопасности, СРО и допуски, разбор реальных кейсов с пруфами, референс от руководителя проекта «Сатурн». Можем начать с понятного первого шага — выезда на объект и расчёта сметы.</p></div></details>
+      <details class="qa"><summary>Мы вас не знаем — как убедиться, что вам можно доверять?<span class="ic">+</span></summary><div class="ans"><p>Открытое юрлицо для проверки службой безопасности, членство в саморегулируемой организации с допуском к генподряду по договорам до 500 млн ₽, разбор реальных кейсов с пруфами, референс от руководителя проекта «Сатурн». Можем начать с понятного первого шага — выезда на объект и расчёта сметы.</p></div></details>
       <details class="qa"><summary>Работаете ли вы с техзаказчиками и проектировщиками?<span class="ic">+</span></summary><div class="ans"><p>Да. Если вы ведёте проект и РНС, мы берём на себя СМР до ЗОС, оставляя авторский и технический надзор за вами. Готовы войти в ваш пул генподрядчиков по складам, производствам и Light Industrial.</p></div></details>
       <details class="qa"><summary>В каких регионах работаете?<span class="ic">+</span></summary><div class="ans"><p>Северо-Запад (Санкт-Петербург, Ленинградская область) — базовый регион. Москва и область, объекты по Центральной России — по согласованию, при необходимости с привлечением местных ресурсов.</p></div></details>
       <details class="qa"><summary>Что я получу на старте — до договора?<span class="ic">+</span></summary><div class="ans"><p>Бесплатный выезд на объект, оценку объёма и сроков и предварительную смету. Честно скажем, что в зоне «Вектора», а что — у партнёров, и какой следующий шаг.</p></div></details>
@@ -741,8 +749,10 @@
         <h4>Контакты</h4>
         <!-- TODO: реальный телефон от Ярослава -->
         <a href="tel:+78120000000">+7 (812) 000-00-00</a>
-        <a href="mailto:sales@vectorprospb.ru">sales@vectorprospb.ru</a>
-        <p>Реквизиты — по запросу</p>
+        <a href="mailto:info@sk-vector.com">info@sk-vector.com</a>
+        <p style="margin-top:10px">ООО «СК «Вектор»</p>
+        <p>ИНН 7801700536 · ОГРН 1217800094027</p>
+        <p>199155, Санкт-Петербург,<br>ул. Уральская, д. 10, к. 1, литера А</p>
       </div>
       <div>
         <h4>Разделы</h4>
@@ -775,7 +785,7 @@
   });
   // form: реальная отправка через FORM_ENDPOINT; пока пусто — fallback на письмо (лиды не теряются)
   var FORM_ENDPOINT = ""; // TODO: вписать URL обработчика/CRM, когда будет
-  var FALLBACK_EMAIL = "sales@vectorprospb.ru";
+  var FALLBACK_EMAIL = "info@sk-vector.com";
   document.getElementById('leadForm').addEventListener('submit',function(e){
     e.preventDefault();
     var f=this, name=f.name.value.trim(), phone=f.phone.value.trim(), agree=f.agree.checked;
