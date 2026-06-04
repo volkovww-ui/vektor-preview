@@ -340,6 +340,10 @@
   /* placeholder marker */
   .todo{font-family:var(--font-mono);font-style:normal;color:#9a6b2f;background:#fff7ed;border:1px dashed #e7c9a5;border-radius:3px;padding:1px 6px;font-size:.82em}
 
+  /* промо-видео */
+  .promo{position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--graphite);margin-top:calc(var(--u)*3)}
+  .promo video{display:block;width:100%;height:auto;background:var(--graphite)}
+  .promo .cap{display:block;background:var(--graphite);color:#9aa6b1;font-family:var(--font-mono);font-size:.74rem;padding:10px 14px;letter-spacing:.02em;border-top:1px solid var(--line-dark)}
   /* video block (case neva) */
   .vid{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*3);margin-top:calc(var(--u)*2);display:flex;gap:16px;align-items:center}
   .vid b{font-family:var(--font-display);font-weight:600}
@@ -583,7 +587,7 @@
       <div class="photo"><span>фото корпуса</span><span>скоро</span></div>
       <div class="photo"><span>фото сдачи</span><span>скоро</span></div>
     </div>
-    <div class="vid"><div class="play">▶</div><div><b>Видео по объекту</b><br><span style="color:var(--muted);font-size:.92rem">Есть видеоматериалы и выступление — <span class="todo">[вставить видео после интервью]</span></span></div></div>
+    <div class="promo"><video controls preload="none" poster="assets/video/promo-poster.jpg"><source src="assets/video/vektor-promo.mp4" type="video/mp4">Ваш браузер не воспроизводит видео.</video><span class="cap">Видеопрезентация СК «Вектор»: объект «Нева Металл Посуда», объекты компании и слово гендиректора</span></div>
     <div class="quote">«<span class="todo">[Отзыв владельца «Нева Металл Посуда» — добавим текст/видео]</span>»
       <cite>— владелец, «Нева Металл Посуда»</cite></div>
   </div>
