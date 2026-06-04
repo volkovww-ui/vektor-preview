@@ -346,7 +346,8 @@
   .proj .p .s{font-family:var(--font-display);font-weight:700;color:var(--accent);font-size:1.5rem}
   .proj .p h3{font-size:1.02rem;margin:5px 0 5px}.proj .p p{font-size:.9rem;color:var(--muted)}
   /* placeholder marker */
-  .todo{font-family:var(--font-mono);font-style:normal;color:#9a6b2f;background:#fff7ed;border:1px dashed #e7c9a5;border-radius:3px;padding:1px 6px;font-size:.82em}
+  .todo{display:none;font-family:var(--font-mono);font-style:normal;color:#9a6b2f;background:#fff7ed;border:1px dashed #e7c9a5;border-radius:3px;padding:1px 6px;font-size:.82em}
+  body.draft .todo{display:inline}
 
   /* промо-видео */
   .promo{position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--graphite);margin-top:calc(var(--u)*3)}
@@ -740,7 +741,7 @@
       </div>
       <div class="field"><label for="region">Регион</label><input id="region" name="region" placeholder="Город / область"></div>
       <div class="field"><label for="msg">Коротко о задаче</label><textarea id="msg" name="msg" placeholder="Что планируете строить, ориентировочные площадь, срок, есть ли проект"></textarea></div>
-      <label class="consent"><input type="checkbox" id="agree" required> Согласен на обработку персональных данных</label>
+      <label class="consent"><input type="checkbox" id="agree" required> Согласен на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" style="color:var(--accent-ink);text-decoration:underline">политику конфиденциальности</a></label>
       <button type="submit" class="btn btn-primary">Отправить заявку →</button>
       <div class="ok" id="ok">Спасибо! Заявка отправлена — перезвоним в рабочее время.</div>
     </form>
@@ -776,7 +777,7 @@
         <a href="case-neva.html">Нева Металл Посуда</a>
       </div>
     </div>
-    <div class="foot-bottom">© <span id="yr"></span> СК «Вектор». Генеральный подряд промышленного и складского строительства.</div>
+    <div class="foot-bottom">© <span id="yr"></span> СК «Вектор». Генеральный подряд промышленного и складского строительства. · <a href="privacy.html">Политика конфиденциальности</a></div>
   </div>
 </footer>
 

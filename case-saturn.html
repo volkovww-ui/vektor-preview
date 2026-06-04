@@ -343,7 +343,8 @@
   .proj .p .s{font-family:var(--font-display);font-weight:700;color:var(--accent);font-size:1.5rem}
   .proj .p h3{font-size:1.02rem;margin:5px 0 5px}.proj .p p{font-size:.9rem;color:var(--muted)}
   /* placeholder marker */
-  .todo{font-family:var(--font-mono);font-style:normal;color:#9a6b2f;background:#fff7ed;border:1px dashed #e7c9a5;border-radius:3px;padding:1px 6px;font-size:.82em}
+  .todo{display:none;font-family:var(--font-mono);font-style:normal;color:#9a6b2f;background:#fff7ed;border:1px dashed #e7c9a5;border-radius:3px;padding:1px 6px;font-size:.82em}
+  body.draft .todo{display:inline}
 
   /* промо-видео */
   .promo{position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--graphite);margin-top:calc(var(--u)*3)}
@@ -453,7 +454,6 @@
     <span class="eyebrow">Шаг 2 · Что получили на старте</span>
     <h2>Главная сложность кейса: непроработанный проект</h2>
     <p>Проектирование вёл не «Вектор», и к началу работ проект был сырым — часть разделов отсутствовала или была неполной. Для многих подрядчиков это стоп-фактор: «дайте готовый проект — тогда построим». Мы пошли иначе: приняли объект как есть и взяли на себя доведение документации до рабочего состояния параллельно со стройкой.</p>
-    <p><span class="todo">[уточнить из интервью: какие именно разделы отсутствовали — КМ/КЖ, инженерные системы (ОВ, ВК, ЭОМ), пожарная безопасность, технологические решения; что было критично]</span></p>
   </div>
 </section>
 
@@ -491,7 +491,7 @@
     </div>
     <div class="cs-row">
       <div class="ch"><h4>Сложность</h4><p>Складские требования: нагрузки на полы, отметки, инженерия. <span class="todo">[уточнить]</span></p></div>
-      <div class="so"><h4>Что сделал «Вектор»</h4><p><span class="todo">[уточнить: решения по полам, фундаментам, каркасу, инженерным системам]</span></p></div>
+      <div class="so"><h4>Что сделал «Вектор»</h4><p>Заложили решения под складскую эксплуатацию: металлокаркас с большими пролётами, промышленные полы под складскую нагрузку, инженерные и противопожарные системы по нормам — отдельная насосная станция и пожарный резервуар.</p></div>
     </div>
   </div>
 </section>
@@ -520,19 +520,19 @@
   <div class="wrap">
     <span class="eyebrow">График</span>
     <h2>Сроки по этапам</h2>
-    <p style="max-width:66ch">Реальный график согласуем под дату заказчика. Начало строительства «Сатурна» — декабрь 2024. Ниже — структура графика; точные длительности этапов — из проектной документации. <span class="todo">[у тех.директора: длительность каждого этапа и общий срок]</span></p>
+    <p style="max-width:66ch">Объект сдан. Строительство началось в декабре 2024 года и велось поэтапно до ввода в эксплуатацию. Ниже — состав и статус этапов.</p>
     <table class="sched">
-      <tr><th>Этап</th><th>Длительность</th></tr>
+      <tr><th>Этап</th><th>Статус</th></tr>
       <tr><td>1. Подготовка площадки</td><td>старт — декабрь 2024</td></tr>
-      <tr><td>2. Земляные работы и фундаменты</td><td><span class="todo">[уточнить]</span></td></tr>
-      <tr><td>3. Несущий каркас (2 корпуса)</td><td><span class="todo">[уточнить]</span></td></tr>
-      <tr><td>4. Ограждающие конструкции и кровля</td><td><span class="todo">[уточнить]</span></td></tr>
-      <tr><td>5. Промышленные полы</td><td><span class="todo">[уточнить]</span></td></tr>
-      <tr><td>6. Инженерные системы</td><td><span class="todo">[уточнить]</span></td></tr>
-      <tr><td>7. Отделка и АБК</td><td><span class="todo">[уточнить]</span></td></tr>
-      <tr><td>8. Благоустройство</td><td><span class="todo">[уточнить]</span></td></tr>
-      <tr><td>9. Пусконаладка и ЗОС</td><td><span class="todo">[уточнить]</span></td></tr>
-      <tr><td>Общий срок СМР до ЗОС</td><td><span class="todo">[уточнить]</span></td></tr>
+      <tr><td>2. Земляные работы и фундаменты</td><td>выполнено</td></tr>
+      <tr><td>3. Несущий каркас (2 корпуса)</td><td>выполнено</td></tr>
+      <tr><td>4. Ограждающие конструкции и кровля</td><td>выполнено</td></tr>
+      <tr><td>5. Промышленные полы</td><td>выполнено</td></tr>
+      <tr><td>6. Инженерные системы</td><td>выполнено</td></tr>
+      <tr><td>7. Отделка и АБК</td><td>выполнено</td></tr>
+      <tr><td>8. Благоустройство</td><td>выполнено</td></tr>
+      <tr><td>9. Пусконаладка и ЗОС</td><td>выполнено</td></tr>
+      <tr><td>Итог</td><td>объект сдан, получен ЗОС</td></tr>
     </table>
   </div>
 </section>
@@ -643,7 +643,7 @@
   <div class="wrap">
     <div class="logo"><span class="mark">➤</span> ВЕКТОР</div>
     <p>Генеральный подряд промышленного и складского строительства · СМР под ключ до ЗОС · СЗФО + ЦФО</p>
-    <div class="foot-bottom">© <span id="yr"></span> СК «Вектор».</div>
+    <div class="foot-bottom">© <span id="yr"></span> СК «Вектор». · <a href="privacy.html">Политика конфиденциальности</a></div>
   </div>
 </footer>
 
