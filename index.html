@@ -219,6 +219,17 @@
   .trust .grid-4 .card{border-top:3px solid var(--accent)}
   .trust .grid-4 .card::after{display:none}
 
+  /* руководство */
+  .team{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*3)}
+  .tcard{display:flex;gap:calc(var(--u)*2.5);background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*2.5);align-items:center;border-top:3px solid var(--accent)}
+  .tphoto{width:150px;height:188px;flex:none;border-radius:var(--radius);overflow:hidden;background:var(--graphite)}
+  .tphoto img{width:100%;height:100%;object-fit:cover;display:block}
+  .tphoto.tmono{display:grid;place-items:center;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:22px 22px}
+  .tphoto.tmono span{font-family:var(--font-display);font-weight:700;font-size:3.6rem;color:var(--accent)}
+  .tcard h3{font-size:1.16rem;margin-bottom:5px}
+  .trole{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:10px}
+  .tcard .tbody p{font-size:.95rem}
+
   /* reviews */
   .quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*4.5);
     font-size:1.12rem;color:#2c343c;font-style:normal;position:relative;font-family:var(--font-body)}
@@ -374,12 +385,13 @@
       background:#fff;border-bottom:1px solid var(--line);padding:calc(var(--u)*2) calc(var(--u)*3);gap:calc(var(--u)*2)}
     .nav-phone{display:none}
     .nav .btn-primary{padding:11px 16px;font-size:.82rem;letter-spacing:.02em}
-    .grid-2,.cases,.pa-row,.partners .two,.cta-grid,.foot,.cs-row,.pgrid,.docs,.photos{grid-template-columns:1fr}
+    .grid-2,.cases,.pa-row,.partners .two,.cta-grid,.foot,.cs-row,.pgrid,.docs,.photos,.team{grid-template-columns:1fr}
     .statband .grid,.aud-grid,.grid-4,.rescue-grid{grid-template-columns:1fr 1fr}
     .sec-head::after{display:none}
   }
   @media(max-width:520px){
     .nav .btn-primary{display:none}
+    .tcard{flex-direction:column;text-align:center;align-items:center}
     .statband .grid,.aud-grid,.grid-4,.kpis,.rgrid,.factbar,.photos,.proj,.rescue-grid{grid-template-columns:1fr}
   }
 </style>
@@ -613,6 +625,27 @@
       <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1Z"/><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><path d="M14 6a6 6 0 0 1 6 6v3"/></svg></span><h3>Сильная техническая команда</h3><p>Технический директор и инженеры, которые ведут объект и отвечают за решения, а не «менеджеры по телефону».</p></div>
       <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span><h3>Допуски и документы</h3><p>Член саморегулируемой организации с допуском к генеральному подряду по договорам до 500 млн ₽, ответственность застрахована. Открытое юрлицо — готовы к проверке службой безопасности.</p></div>
       <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/></svg></span><h3>Ответственность в договоре</h3><p>Фиксированная смета, закреплённые сроки, гарантийные обязательства — на бумаге, а не на словах.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10b. РУКОВОДСТВО -->
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Кто отвечает за объект</span>
+      <h2>Руководство, с которым вы работаете</h2>
+      <p>За компанию и за техническую часть отвечают конкретные люди, а не «менеджеры по телефону». Юрлицо открытое — данные руководства сверяются с реестром.</p>
+    </div>
+    <div class="team">
+      <div class="tcard">
+        <div class="tphoto"><img src="assets/img/team/zhuravleva.jpg" alt="Журавлёва Татьяна Борисовна — генеральный директор СК «Вектор»" loading="lazy"></div>
+        <div class="tbody"><h3>Журавлёва Татьяна Борисовна</h3><div class="trole">Генеральный директор</div><p>Руководит компанией с основания. Отвечает за договорные обязательства, сроки и финансовую дисциплину на объекте.</p></div>
+      </div>
+      <div class="tcard">
+        <div class="tphoto tmono"><span>В</span></div>
+        <div class="tbody"><h3>Варламов Евгений Юрьевич</h3><div class="trole">Технический директор</div><p>Ведёт инженерные решения и стройку, выступает на отраслевых форумах. Закрывает техническую часть перед заказчиком и его экспертами.</p></div>
+      </div>
     </div>
   </div>
 </section>
