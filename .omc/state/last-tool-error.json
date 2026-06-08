@@ -1,7 +1,0 @@
-{
-  "tool_name": "mcp__chrome-devtools__navigate_page",
-  "tool_input_preview": "{\"type\":\"url\",\"url\":\"https://volkovww-ui.github.io/vektor-preview/index.html\"}",
-  "error": "The browser is already running for /Users/vitalijvolkov/.chrome-mcp-profile. Use --isolated to run multiple browser instances.\nCause: The browser is already running for /Users/vitalijvolkov/.chrome-mcp-profile. Use a different `userDataDir` or stop the running browser first.",
-  "timestamp": "2026-06-04T20:03:09.069Z",
-  "retry_count": 1
-}
