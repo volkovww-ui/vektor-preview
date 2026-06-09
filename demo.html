@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b2127'/%3E%3Ctext x='16' y='24' font-size='20' text-anchor='middle' fill='%23ff5b2e' font-family='Arial'%3E%E2%9E%A4%3C/text%3E%3C/svg%3E">
+<title>СК «Вектор» — генподряд промышленного и складского строительства под ключ до ЗОС | СЗФО и ЦФО</title>
+<meta name="description" content="СК «Вектор» — генеральный подрядчик промышленного и складского строительства. Строительно-монтажные работы под ключ до ЗОС: склады, производственные цеха, логистические комплексы. Фиксированная смета и сроки в договоре. Кейсы «Сатурн» и «Нева Металл Посуда». СЗФО и ЦФО.">
+<meta property="og:title" content="СК «Вектор» — надёжный генподрядчик промышленного и складского строительства">
+<meta property="og:description" content="СМР под ключ до ЗОС. Фикс-смета и сроки в договоре. Реальные кейсы, а не обещания.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --bg-alt:#f1efe9; --paper:#f6f4ee;
+    --graphite:#14181d; --graphite-2:#1c242b; --ink:#0d1115;
+    --text:#16191d; --muted:#5a6571; --line:#e0e1dc; --line-dark:#2a333c;
+    --accent:#ff5a1f; --accent-ink:#d8431b; --accent-soft:#fff1ea;
+    --steel:#8a99a8; --ok:#1b7a43;
+    --container:1200px; --radius:4px; --u:8px;
+    --shadow:0 18px 50px rgba(13,17,21,.13); --shadow-sm:0 6px 18px rgba(13,17,21,.07);
+    --fs-h1:clamp(2.4rem,6vw,4.4rem); --fs-h2:clamp(1.7rem,3.6vw,2.6rem);
+    --font-display:"Oswald","Golos Text",system-ui,sans-serif;
+    --font-body:"Golos Text","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+    --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;overflow-x:clip}
+  body{font-family:var(--font-body);color:var(--text);background:var(--bg);
+    line-height:1.65;-webkit-font-smoothing:antialiased;counter-reset:sec}
+  h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;line-height:1.06;letter-spacing:.01em;color:var(--text)}
+  h2{font-size:var(--fs-h2);margin-bottom:calc(var(--u)*2.5)}
+  p{color:var(--muted)}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--accent);color:#fff}
+  .wrap{max-width:var(--container);margin:0 auto;padding:0 calc(var(--u)*3)}
+  .narrow{max-width:64ch}
+  section{padding:calc(var(--u)*9) 0;position:relative}
+
+  /* technical label */
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-mono);
+    font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent-ink);margin-bottom:calc(var(--u)*2.5);line-height:1.5}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);flex:none}
+
+  /* section head with engineering numeral watermark */
+  .sec-head{max-width:62ch;margin-bottom:calc(var(--u)*5);position:relative;counter-increment:sec}
+  .sec-head::after{content:counter(sec,decimal-leading-zero);position:absolute;top:-.4em;right:0;
+    font-family:var(--font-display);font-weight:700;font-size:clamp(3.4rem,8vw,6.5rem);line-height:1;
+    color:var(--graphite);opacity:.045;pointer-events:none;letter-spacing:-.03em}
+  .sec-head p{font-family:var(--font-body);font-size:1.08rem;margin-top:12px;color:var(--muted)}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:600;
+    font-size:1rem;letter-spacing:.05em;text-transform:uppercase;padding:15px 28px;border-radius:var(--radius);
+    border:1.5px solid transparent;cursor:pointer;transition:.2s cubic-bezier(.2,.7,.2,1);white-space:nowrap}
+  .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 22px rgba(255,90,31,.26)}
+  .btn-primary:hover{background:var(--accent-ink);transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,90,31,.36)}
+  .btn-dark{background:var(--graphite);color:#fff}
+  .btn-dark:hover{background:var(--graphite-2);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;border-color:var(--line-dark);color:var(--graphite)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent-ink)}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);
+    backdrop-filter:blur(10px) saturate(1.2);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:11px;font-family:var(--font-display);font-weight:700;
+    font-size:1.4rem;letter-spacing:.14em;text-transform:uppercase}
+  .logo .mark{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:3px;
+    background:var(--graphite);color:var(--accent);font-size:1.1rem;
+    clip-path:polygon(0 0,100% 0,100% 70%,70% 100%,0 100%)}
+  .nav-links{display:flex;gap:calc(var(--u)*3.2);align-items:center}
+  .nav-links a{font-family:var(--font-mono);font-weight:500;color:var(--graphite);font-size:.8rem;
+    letter-spacing:.04em;text-transform:uppercase;position:relative;padding:4px 0}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--accent);transition:.22s}
+  .nav-links a:hover{color:var(--accent-ink)}
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:calc(var(--u)*2)}
+  .nav-phone{font-family:var(--font-display);font-weight:600;color:var(--graphite);font-size:1.06rem;letter-spacing:.02em}
+  .burger{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--graphite)}
+
+  /* hero (main + case share blueprint backdrop) */
+  .hero,.case-hero{position:relative;overflow:hidden;
+    background:radial-gradient(1100px 480px at 86% -8%,rgba(255,90,31,.12),transparent 58%),
+      linear-gradient(180deg,#fff,var(--paper))}
+  .hero{padding:calc(var(--u)*9) 0 calc(var(--u)*10)}
+  .hero::before,.case-hero::before{content:"";position:absolute;inset:0;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:40px 40px;opacity:.6;mask-image:radial-gradient(900px 520px at 82% 0%,#000,transparent 78%)}
+  .hero .wrap,.case-hero .wrap{position:relative}
+  .hero h1{font-size:var(--fs-h1);max-width:17ch;margin-bottom:calc(var(--u)*3);font-weight:600}
+  .hero h1 .hl{color:var(--accent)}
+  .hero .lead{font-family:var(--font-body);font-size:1.2rem;max-width:58ch;margin-bottom:calc(var(--u)*4.5);color:#3c454e}
+  .hero-actions{display:flex;gap:calc(var(--u)*2);flex-wrap:wrap;margin-bottom:calc(var(--u)*5)}
+  .hero-trust{display:flex;gap:calc(var(--u)*4);flex-wrap:wrap;font-family:var(--font-mono);font-size:.82rem;
+    color:var(--muted);border-top:1px solid var(--line);padding-top:calc(var(--u)*3)}
+  .hero-trust span{display:flex;align-items:center;gap:8px}
+  .hero-trust b{color:var(--graphite);font-family:var(--font-display);font-weight:600;letter-spacing:.02em}
+
+  /* stat band */
+  .statband{background-color:var(--graphite);color:#e7ecf1;
+    background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+    background-size:40px 40px}
+  .statband .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*3)}
+  .statband .grid>div{position:relative;padding-left:calc(var(--u)*2.5)}
+  .statband .grid>div::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:2px;background:var(--accent);opacity:.75}
+  .statband .num{font-family:var(--font-display);font-size:clamp(2.3rem,4vw,3.3rem);font-weight:700;color:#fff;letter-spacing:-.01em;line-height:1}
+  .statband .num .accent{color:var(--accent)}
+  .statband .lbl{font-family:var(--font-mono);font-size:.78rem;color:#9aa6b1;margin-top:10px;letter-spacing:.03em;line-height:1.5}
+
+  /* audience router */
+  .aud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*2.5)}
+  .aud{border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*3.5) calc(var(--u)*3);
+    background:#fff;transition:.22s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden}
+  .aud::before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:.25s}
+  .aud:hover{box-shadow:var(--shadow);transform:translateY(-3px);border-color:#cfd4cd}
+  .aud:hover::before{transform:scaleX(1)}
+  .aud .ic{font-size:1.7rem}
+  .aud h3{font-size:1.2rem}
+  .aud p{font-size:.94rem}
+  .aud a{margin-top:auto;font-family:var(--font-mono);font-weight:600;color:var(--accent-ink);font-size:.78rem;
+    letter-spacing:.05em;text-transform:uppercase;padding-top:8px}
+
+  /* generic cards grid */
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*3)}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--u)*3)}
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*2.5)}
+  .card{border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*3.5) calc(var(--u)*3);background:#fff;position:relative;transition:.22s}
+  .card::after{content:"";position:absolute;top:11px;right:11px;width:13px;height:13px;border-top:2px solid var(--line);border-right:2px solid var(--line);transition:.22s}
+  .card:hover{border-color:#cfd4cd;box-shadow:var(--shadow-sm)}
+  .card:hover::after{border-color:var(--accent)}
+  .card h3{font-size:1.16rem;margin-bottom:10px}
+  .card p{font-size:.95rem}
+  .card .ic{font-size:1.5rem;margin-bottom:12px;display:block}
+  /* line icons */
+  .ic svg{width:30px;height:30px;stroke:var(--accent);stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round;display:block}
+  .aud .ic svg{width:34px;height:34px}
+  .doc .ic svg{width:20px;height:20px;stroke-width:2.2}
+  .hero-trust svg{width:17px;height:17px;stroke:var(--accent);stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+  /* pain -> answer */
+  .pa{background:var(--bg-alt)}
+  .pa-row{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*3);align-items:stretch}
+  .pa-col{border-radius:var(--radius);padding:calc(var(--u)*4)}
+  .pa-pain{background:#fff;border:1px solid var(--line)}
+  .pa-pain h3{color:var(--graphite);font-size:1.18rem;margin-bottom:calc(var(--u)*2.5)}
+  .pa-pain li{color:var(--muted);font-size:.97rem;padding:11px 0 11px 28px;position:relative;border-bottom:1px dashed var(--line);list-style:none}
+  .pa-pain li::before{content:"\00d7";position:absolute;left:0;color:#c0473a;font-weight:800;font-family:var(--font-mono)}
+  .pa-ans{background-color:var(--graphite);color:#e7ecf1;
+    background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:36px 36px}
+  .pa-ans h3{color:#fff;font-size:1.18rem;margin-bottom:calc(var(--u)*2.5)}
+  .pa-ans li{font-size:.97rem;padding:11px 0 11px 28px;position:relative;border-bottom:1px dashed #333d47;list-style:none;color:#cdd5dd}
+  .pa-ans li::before{content:"\2192";position:absolute;left:0;color:var(--accent);font-weight:800;font-family:var(--font-mono)}
+
+  /* cases grid (main page) */
+  .cases{display:grid;grid-template-columns:repeat(2,1fr);gap:calc(var(--u)*3.5)}
+  .case{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;
+    display:flex;flex-direction:column;transition:.25s cubic-bezier(.2,.7,.2,1)}
+  .case:hover{box-shadow:var(--shadow);transform:translateY(-4px);border-color:#cfd4cd}
+  .case .ph{aspect-ratio:16/9;background-color:var(--graphite);
+    background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+    background-size:28px 28px;position:relative;display:flex;align-items:flex-end;justify-content:space-between;
+    padding:16px;color:#9aa6b1;font-family:var(--font-mono);font-size:.74rem}
+  .case .ph::after{content:"";position:absolute;left:16px;top:16px;width:22px;height:22px;border-top:2px solid var(--accent);border-left:2px solid var(--accent);z-index:2}
+  .case .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .case .body{padding:calc(var(--u)*3.5) calc(var(--u)*3);display:flex;flex-direction:column;gap:12px;flex:1}
+  .case h3{font-size:1.5rem}
+  .case .row{display:flex;gap:24px;margin-top:8px;flex-wrap:wrap}
+  .case .row div{font-family:var(--font-mono);font-size:.76rem;color:var(--muted);letter-spacing:.02em}
+  .case .row b{display:block;font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--graphite)}
+  .case .link{margin-top:auto;font-family:var(--font-mono);font-weight:600;color:var(--accent-ink);padding-top:10px;
+    font-size:.8rem;letter-spacing:.05em;text-transform:uppercase}
+
+  /* chips */
+  .chip{align-self:flex-start;font-family:var(--font-mono);font-size:.72rem;font-weight:500;color:var(--graphite);
+    background:var(--bg-alt);border:1px solid var(--line);padding:5px 11px;border-radius:999px;letter-spacing:.03em;text-transform:uppercase}
+
+  /* rescue highlight */
+  .rescue{color:#fff;
+    background:radial-gradient(800px 360px at 12% 0%,rgba(255,90,31,.16),transparent 55%),
+      linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px),var(--graphite-2);
+    background-size:auto,40px 40px,40px 40px,auto}
+  .rescue h2{color:#fff;max-width:22ch}
+  .rescue .lead{color:#aeb8c2;max-width:58ch;font-size:1.1rem;margin-top:12px;font-family:var(--font-body)}
+  .rescue-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--u)*3);margin-top:calc(var(--u)*5)}
+  .rescue-grid .it{border-left:2px solid var(--accent);padding-left:calc(var(--u)*2.5)}
+  .rescue-grid .it b{display:block;color:var(--accent);font-family:var(--font-display);font-size:2rem;font-weight:700}
+  .rescue-grid .it span{color:#cdd5dd;font-size:.96rem}
+
+  /* responsibility cycle */
+  .cycle{display:flex;gap:6px;flex-wrap:wrap;margin-top:calc(var(--u)*3)}
+  .cstep{flex:1;min-width:120px;border:1px solid var(--line);border-radius:var(--radius);padding:13px 14px;
+    background:#fff;font-family:var(--font-mono);font-size:.76rem;text-align:center;color:var(--muted)}
+  .cstep.ours{background:var(--graphite);color:#fff;border-color:var(--graphite)}
+  .cstep b{display:block;font-family:var(--font-display);color:var(--graphite);font-size:.98rem;margin-bottom:3px;letter-spacing:.02em}
+  .cstep.ours b{color:var(--accent)}
+  .legend{display:flex;gap:20px;flex-wrap:wrap;margin-top:calc(var(--u)*2.5);font-family:var(--font-mono);font-size:.78rem;color:var(--muted)}
+  .legend .dot{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:middle;margin-right:6px}
+
+  /* process timeline */
+  .timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:calc(var(--u)*2);counter-reset:t;margin-top:calc(var(--u)*3)}
+  .tl{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*3) calc(var(--u)*2.5);position:relative}
+  .tl::before{counter-increment:t;content:counter(t,decimal-leading-zero);position:absolute;top:-13px;left:14px;
+    min-width:30px;height:28px;padding:0 7px;border-radius:3px;background:var(--accent);color:#fff;
+    font-family:var(--font-display);font-weight:600;display:grid;place-items:center;font-size:.82rem}
+  .tl h3{font-size:1rem;margin:10px 0 5px}
+  .tl p{font-size:.86rem}
+
+  /* partners */
+  .partners{background:var(--bg-alt)}
+  .partners .box{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius);padding:calc(var(--u)*4.5)}
+  .partners .two{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*3);margin-top:calc(var(--u)*2.5)}
+
+  /* trust */
+  .trust .grid-4 .card{border-top:3px solid var(--accent)}
+  .trust .grid-4 .card::after{display:none}
+
+  /* руководство */
+  .team{display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--u)*3)}
+  .tcard{display:flex;gap:calc(var(--u)*2.5);background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*2.5);align-items:center;border-top:3px solid var(--accent)}
+  .tphoto{width:150px;height:188px;flex:none;border-radius:var(--radius);overflow:hidden;background:var(--graphite)}
+  .tphoto img{width:100%;height:100%;object-fit:cover;display:block}
+  .tphoto.tmono{display:grid;place-items:center;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:22px 22px}
+  .tphoto.tmono span{font-family:var(--font-display);font-weight:700;font-size:3.6rem;color:var(--accent)}
+  .tcard h3{font-size:1.16rem;margin-bottom:5px}
+  .trole{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:10px}
+  .tcard .tbody p{font-size:.95rem}
+
+  /* reviews */
+  .quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*4.5);
+    font-size:1.12rem;color:#2c343c;font-style:normal;position:relative;font-family:var(--font-body)}
+  .quote::before{content:"\201C";position:absolute;top:6px;left:18px;font-family:var(--font-display);font-size:5rem;color:var(--accent);opacity:.16;line-height:1}
+  .quote cite{display:block;font-style:normal;font-family:var(--font-mono);font-size:.8rem;color:var(--muted);margin-top:16px;font-weight:500;letter-spacing:.03em}
+
+  /* faq */
+  .faq-list{max-width:900px;margin-top:calc(var(--u)*3)}
+  .qa{border-bottom:1px solid var(--line)}
+  .qa summary{list-style:none;cursor:pointer;padding:calc(var(--u)*3) 0;font-family:var(--font-display);font-size:1.14rem;font-weight:500;
+    color:var(--graphite);display:flex;justify-content:space-between;gap:16px;align-items:center}
+  .qa summary::-webkit-details-marker{display:none}
+  .qa .ic{color:var(--accent);font-size:1.5rem;transition:.25s;flex:none}
+  .qa[open] .ic{transform:rotate(45deg)}
+  .qa .ans p{padding:0 0 calc(var(--u)*3);max-width:82ch}
+
+  /* cta form */
+  .cta{color:#fff;
+    background:radial-gradient(900px 400px at 15% 0%,rgba(255,90,31,.16),transparent 55%),
+      linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px),var(--graphite-2);
+    background-size:auto,40px 40px,40px 40px,auto}
+  .cta-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:calc(var(--u)*6);align-items:start}
+  .cta h2{color:#fff}.cta p{color:#aeb8c2;font-family:var(--font-body)}
+  .cta ul{list-style:none;margin-top:calc(var(--u)*3);display:grid;gap:12px}
+  .cta li{display:flex;gap:12px;color:#cdd5dd;font-size:1rem}
+  .cta li::before{content:"\2192";color:var(--accent);font-weight:800;font-family:var(--font-mono)}
+  .toggle{display:flex;gap:8px;margin-bottom:calc(var(--u)*2.5)}
+  .toggle button{flex:1;padding:12px;border:1px solid var(--line);background:#fff;border-radius:var(--radius);
+    font-family:var(--font-mono);font-weight:600;cursor:pointer;color:var(--muted);font-size:.8rem;letter-spacing:.03em;text-transform:uppercase}
+  .toggle button.on{background:var(--graphite);color:#fff;border-color:var(--graphite)}
+  form{background:#fff;border-radius:var(--radius);padding:calc(var(--u)*4.5);box-shadow:var(--shadow)}
+  .field{margin-bottom:calc(var(--u)*2.5)}
+  label{display:block;font-family:var(--font-mono);font-size:.76rem;font-weight:500;color:var(--graphite);margin-bottom:7px;letter-spacing:.04em;text-transform:uppercase}
+  input,select,textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:var(--radius);font-family:var(--font-body);font-size:1rem;color:var(--text);background:#fcfdfe}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+  textarea{resize:vertical;min-height:90px}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:.8rem;color:var(--muted)}
+  .consent input{width:auto;margin-top:3px}
+  form .btn-primary{width:100%;justify-content:center;margin-top:8px}
+  .ok{display:none;background:#eafaf0;border:1px solid #b7e6c8;color:var(--ok);padding:15px;border-radius:var(--radius);font-weight:600;text-align:center}
+
+  /* footer */
+  footer{background:var(--ink);color:#9aa6b1;padding:calc(var(--u)*7) 0 calc(var(--u)*4);font-size:.92rem}
+  .foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:calc(var(--u)*4)}
+  footer .logo{color:#fff;margin-bottom:14px}
+  footer a:hover{color:#fff}
+  .foot h4{font-family:var(--font-mono);color:#fff;font-size:.8rem;margin-bottom:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:500}
+  .foot p,.foot a{font-size:.92rem;display:block;margin-bottom:7px}
+  .foot-bottom{border-top:1px solid #232b33;margin-top:calc(var(--u)*4);padding-top:calc(var(--u)*3);font-family:var(--font-mono);font-size:.76rem;color:#6c7882;letter-spacing:.02em}
+
+  /* ===== case-specific ===== */
+  .crumbs{font-family:var(--font-mono);font-size:.76rem;color:var(--muted);padding-top:calc(var(--u)*4);letter-spacing:.02em}
+  .crumbs a:hover{color:var(--accent-ink)}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;margin:calc(var(--u)*2) 0}
+  .case-hero h1{font-size:clamp(1.9rem,4vw,3.1rem);max-width:24ch;margin-bottom:calc(var(--u)*2)}
+  .case-hero .lead{font-family:var(--font-body);font-size:1.14rem;max-width:64ch;color:#3c454e}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*2);margin-top:calc(var(--u)*4)}
+  .kpi{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*3);position:relative;border-top:3px solid var(--accent)}
+  .kpi b{display:block;font-family:var(--font-display);font-size:1.7rem;font-weight:700;color:var(--graphite);letter-spacing:-.01em}
+  .kpi span{font-family:var(--font-mono);font-size:.76rem;color:var(--muted);letter-spacing:.02em}
+  .lead-block p{font-size:1.06rem;margin-top:calc(var(--u)*1.5)}
+  .factbar{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*2);margin-top:calc(var(--u)*3);font-size:.9rem}
+  .factbar div{background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--radius);padding:13px 15px}
+  .factbar b{display:block;font-family:var(--font-display);color:var(--graphite);font-weight:600;font-size:1.05rem}
+  .problems{background:var(--bg-alt)}
+  .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:calc(var(--u)*3);margin-top:calc(var(--u)*2)}
+  .pcard{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius);padding:calc(var(--u)*3.5) calc(var(--u)*3)}
+  .pcard h3{font-size:1.1rem;margin-bottom:7px}.pcard p{font-size:.95rem;color:var(--muted)}
+  .cs-row{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:calc(var(--u)*2);background:#fff}
+  .cs-row>div{padding:calc(var(--u)*3.5) calc(var(--u)*3)}
+  .cs-row .ch{border-right:1px solid var(--line);background:#fff}
+  .cs-row .so{background:var(--bg-alt)}
+  .cs-row h4{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+  .cs-row .ch h4{color:#c0473a}.cs-row .so h4{color:var(--accent-ink)}
+  .cs-row p{font-size:.95rem;color:#3c454e}
+  /* vertical stage timeline */
+  .stages{margin-top:calc(var(--u)*3);position:relative}
+  .stage{display:grid;grid-template-columns:56px 1fr;gap:calc(var(--u)*2.5);padding-bottom:calc(var(--u)*3.5);position:relative}
+  .stage:not(:last-child)::before{content:"";position:absolute;left:21px;top:48px;bottom:0;width:2px;background:var(--line)}
+  .stage .n{width:44px;height:44px;border-radius:3px;background:var(--graphite);color:var(--accent);
+    font-family:var(--font-display);font-weight:700;display:grid;place-items:center;font-size:1.15rem;z-index:1;
+    clip-path:polygon(0 0,100% 0,100% 74%,74% 100%,0 100%)}
+  .stage .body{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*3) calc(var(--u)*3.5)}
+  .stage h3{font-size:1.12rem;margin-bottom:7px}
+  .stage p{font-size:.95rem;color:var(--muted)}
+  .stage .meta{font-family:var(--font-mono);font-size:.74rem;color:var(--accent-ink);font-weight:600;margin-bottom:8px;letter-spacing:.04em;text-transform:uppercase}
+  .stage ul{margin:12px 0 0 0;list-style:none}
+  .stage li{font-size:.93rem;color:#3c454e;margin-bottom:6px;padding-left:20px;position:relative}
+  .stage li::before{content:"\2013";position:absolute;left:4px;color:var(--accent);font-weight:800}
+  .stage .why{font-size:.9rem;color:var(--accent-ink);font-weight:500;margin-top:14px;background:var(--accent-soft);border-radius:var(--radius);padding:10px 14px;border-left:2px solid var(--accent)}
+  .stage .why b{color:var(--accent-ink);font-family:var(--font-mono);font-size:.72rem;letter-spacing:.04em;text-transform:uppercase}
+  /* result */
+  .result{background-color:var(--graphite);color:#e7ecf1;
+    background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:40px 40px}
+  .result h2{color:#fff}
+  .rgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*3);margin-top:calc(var(--u)*2)}
+  .rgrid div{position:relative;padding-left:calc(var(--u)*2);border-left:2px solid var(--accent)}
+  .rgrid b{display:block;font-family:var(--font-display);font-size:1.9rem;color:#fff;font-weight:700}
+  .rgrid span{color:#9aa6b1;font-family:var(--font-mono);font-size:.78rem;letter-spacing:.02em}
+  .result .got{margin-top:calc(var(--u)*3);color:#cdd5dd;border-left:3px solid var(--accent);padding-left:16px;max-width:64ch}
+  /* docs / photos */
+  .docs{display:grid;grid-template-columns:repeat(2,1fr);gap:calc(var(--u)*2);margin-top:calc(var(--u)*2)}
+  .doc{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px;font-size:.94rem}
+  .doc .ic{color:var(--accent);font-weight:800}
+  .photos{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--u)*2);margin-top:calc(var(--u)*2)}
+  .photo{aspect-ratio:4/3;border-radius:var(--radius);border:1px solid var(--line);background-color:var(--graphite);
+    background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+    background-size:26px 26px;position:relative;display:flex;align-items:flex-end;justify-content:space-between;padding:12px;color:#9aa6b1;font-family:var(--font-mono);font-size:.74rem}
+  .photo::after{content:"";position:absolute;left:12px;top:12px;width:18px;height:18px;border-top:2px solid var(--accent);border-left:2px solid var(--accent);z-index:3}
+  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .photo .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;background:linear-gradient(transparent,rgba(13,17,21,.86));color:#fff;font-family:var(--font-mono);font-size:.72rem;padding:26px 12px 9px;letter-spacing:.02em;line-height:1.4}
+  /* case hero photo band */
+  .hero-shot{margin-top:calc(var(--u)*4.5);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;position:relative;aspect-ratio:21/9;background:var(--graphite)}
+  .hero-shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .hero-shot::after{content:"";position:absolute;left:18px;top:18px;width:28px;height:28px;border-top:3px solid var(--accent);border-left:3px solid var(--accent)}
+  .hero-shot .cap{position:absolute;right:0;bottom:0;background:linear-gradient(270deg,rgba(13,17,21,.82),transparent);color:#fff;font-family:var(--font-mono);font-size:.74rem;padding:24px 16px 12px 40px;letter-spacing:.02em}
+  /* schedule + projection (added blocks) */
+  .sched{width:100%;border-collapse:collapse;margin-top:calc(var(--u)*2);font-size:.95rem;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .sched th,.sched td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line)}
+  .sched th{font-family:var(--font-mono);color:var(--muted);font-weight:600;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;background:var(--bg-alt)}
+  .sched td:last-child{font-family:var(--font-display);font-weight:600;white-space:nowrap}
+  .sched tr:last-child td{border-bottom:0;border-top:2px solid var(--graphite);font-weight:700;color:var(--graphite)}
+  .proj{display:grid;grid-template-columns:repeat(4,1fr);gap:calc(var(--u)*2.5);margin-top:calc(var(--u)*2)}
+  .proj .p{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*3) calc(var(--u)*2.5);position:relative;border-top:3px solid var(--accent)}
+  .proj .p .s{font-family:var(--font-display);font-weight:700;color:var(--accent);font-size:1.5rem}
+  .proj .p h3{font-size:1.02rem;margin:5px 0 5px}.proj .p p{font-size:.9rem;color:var(--muted)}
+  /* placeholder marker */
+  .todo{display:none;font-family:var(--font-mono);font-style:normal;color:#9a6b2f;background:#fff7ed;border:1px dashed #e7c9a5;border-radius:3px;padding:1px 6px;font-size:.82em}
+  body.draft .todo{display:inline}
+
+  /* промо-видео */
+  .promo{position:relative;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--graphite);margin-top:calc(var(--u)*3)}
+  .promo video{display:block;width:100%;height:auto;background:var(--graphite)}
+  .promo .cap{display:block;background:var(--graphite);color:#9aa6b1;font-family:var(--font-mono);font-size:.74rem;padding:10px 14px;letter-spacing:.02em;border-top:1px solid var(--line-dark)}
+  /* video block (case neva) */
+  .vid{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:calc(var(--u)*3);margin-top:calc(var(--u)*2);display:flex;gap:16px;align-items:center}
+  .vid b{font-family:var(--font-display);font-weight:600}
+  .vid .play{width:48px;height:48px;border-radius:3px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:1.2rem;flex:none;clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}
+
+  /* scroll reveal */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  @media(max-width:980px){
+    .statband .grid,.aud-grid,.grid-4,.timeline,.kpis,.rgrid,.factbar{grid-template-columns:1fr 1fr}
+    .grid-3{grid-template-columns:1fr}
+    .rescue-grid,.proj{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:820px){
+    .nav-links{display:none}.burger{display:block}
+    .nav-links.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;
+      background:#fff;border-bottom:1px solid var(--line);padding:calc(var(--u)*2) calc(var(--u)*3);gap:calc(var(--u)*2)}
+    .nav-phone{display:none}
+    .nav .btn-primary{padding:11px 16px;font-size:.82rem;letter-spacing:.02em}
+    .grid-2,.cases,.pa-row,.partners .two,.cta-grid,.foot,.cs-row,.pgrid,.docs,.photos,.team{grid-template-columns:1fr}
+    .statband .grid,.aud-grid,.grid-4,.rescue-grid{grid-template-columns:1fr 1fr}
+    .sec-head::after{display:none}
+  }
+  @media(max-width:520px){
+    .nav .btn-primary{display:none}
+    .tcard{flex-direction:column;text-align:center;align-items:center}
+    .statband .grid,.aud-grid,.grid-4,.kpis,.rgrid,.factbar,.photos,.proj,.rescue-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="mark">➤</span> ВЕКТОР</a>
+    <nav class="nav-links" id="menu">
+      <a href="#about">О компании</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#how">Как работаем</a>
+      <a href="#why">Почему мы</a>
+      <a href="#partners">Партнёрам</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+79052005143" class="nav-phone">+7 905 200-51-43</a>
+      <a href="#contact" class="btn btn-primary">Обсудить объект</a>
+      <button class="burger" id="burger" aria-label="Меню">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Генеральный подряд · промышленное и складское строительство · СЗФО + ЦФО</span>
+    <h1>Строим производственные и складские объекты под ключ — и <span class="hl">решаем вопросы заказчика</span></h1>
+    <p class="lead">Сырой проект, жёсткий срок под запуск оборудования, стройка рядом с действующим производством — для нас это рабочие задачи, а не повод поднять цену или сдвинуть график. Доводим объект до сдачи в эксплуатацию (получение ЗОС), фиксируем смету и срок в договоре. Доказываем не обещаниями, а сданными объектами.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Обсудить объект →</a>
+      <a href="#cases" class="btn btn-dark">Смотреть кейсы</a>
+    </div>
+    <div class="hero-trust">
+      <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg> Объекты <b>1 000–50 000 м²</b></span>
+      <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> Под ключ <b>до ЗОС</b></span>
+      <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg> Заказчикам и <b>техзаказчикам / проектировщикам</b></span>
+      <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> <b>СЗФО + ЦФО</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- 2. STAT BAND -->
+<section class="statband" style="padding:calc(var(--u)*5) 0">
+  <div class="wrap">
+    <div class="grid">
+      <div><div class="num">~<span class="cup" data-to="1" data-dur="800">0</span> <span class="accent">млрд ₽</span></div><div class="lbl">бюджет флагманского объекта «Сатурн»</div></div>
+      <div><div class="num">~<span class="cup" data-to="12000" data-sep="1" data-dur="1300">0</span> <span class="accent">м²</span></div><div class="lbl">складской комплекс «Сатурн», 2 корпуса</div></div>
+      <div><div class="num">до <span class="accent">ЗОС</span></div><div class="lbl">полный цикл СМР под ключ</div></div>
+      <div><div class="num"><span class="cup" data-to="2" data-dur="700">0</span> <span class="accent">округа</span></div><div class="lbl">Северо-Запад и Центр</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2b. ДОПУСКИ И ГАРАНТИИ (trust strip) -->
+<style>
+  .creds{padding:calc(var(--u)*5) 0;background:var(--bg-alt);border-bottom:1px solid var(--line)}
+  .creds .ttl{font-family:var(--font-mono);font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:calc(var(--u)*2.5);display:flex;align-items:center;gap:9px}
+  .creds .ttl::before{content:"";width:26px;height:2px;background:var(--accent)}
+  .creds .row{display:grid;grid-template-columns:repeat(5,1fr);gap:calc(var(--u)*2)}
+  .cred{display:flex;flex-direction:column;gap:9px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:var(--radius);padding:calc(var(--u)*2.6) calc(var(--u)*2.4);transition:.22s cubic-bezier(.2,.7,.2,1)}
+  .cred:hover{box-shadow:var(--shadow-sm);transform:translateY(-3px)}
+  .cred svg{width:26px;height:26px;stroke:var(--accent);stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .cred b{font-family:var(--font-display);font-weight:600;font-size:1.02rem;color:var(--graphite);line-height:1.15}
+  .cred span{font-family:var(--font-mono);font-size:.72rem;color:var(--muted);letter-spacing:.02em;line-height:1.45}
+  @media(max-width:980px){.creds .row{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.creds .row{grid-template-columns:1fr}}
+</style>
+<section class="creds" aria-label="Допуски, страхование и гарантии">
+  <div class="wrap">
+    <div class="ttl">Допуски, страхование и гарантии — проверяемо</div>
+    <div class="row">
+      <div class="cred"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9 12 2 2 4-4"/></svg><b>Член СРО</b><span>допуск к генподряду до 500 млн ₽</span></div>
+      <div class="cred"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg><b>Ответственность застрахована</b><span>строительно-монтажные работы</span></div>
+      <div class="cred"><svg viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"/></svg><b>Открытое юрлицо</b><span>ИНН 7801700536 · ОГРН 1217800094027</span></div>
+      <div class="cred"><svg viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg><b>Смета и срок — в договоре</b><span>фикс-цена, без скрытых доплат</span></div>
+      <div class="cred"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><b>Сдача до ЗОС + гарантия</b><span>гарантийные обязательства письменно</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. AUDIENCE ROUTER -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Кому мы строим</span>
+      <h2>Вы пришли за конкретным объектом — мы говорим на вашем языке</h2>
+      <p>«Вектор» строит промышленные и складские объекты для бизнеса, который расширяется. Выберите, кто вы — покажем, что важно именно вам.</p>
+    </div>
+    <div class="aud-grid">
+      <div class="aud"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M7 18h0"/><path d="M12 18h0"/><path d="M17 18h0"/></svg></span><h3>Производственник</h3><p>Строите или расширяете цех/завод, оборудование уже на подходе — нужен корпус точно к сроку.</p><a href="#contact">Обсудить →</a></div>
+      <div class="aud"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/><path d="m7.5 4.27 9 5.15"/></svg></span><h3>Логист / склад</h3><p>Распределительный центр или склад класса А под собственные операции и контракты с сетями.</p><a href="#contact">Обсудить →</a></div>
+      <div class="aud"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/></svg></span><h3>Сеть / ритейл</h3><p>Складской комплекс под логистику сети — как для «Сатурна». Масштаб, сроки, надёжность.</p><a href="#cases">Наш кейс →</a></div>
+      <div class="aud"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg></span><h3>Техзаказчик / проектировщик</h3><p>Вы ведёте проект и РНС — мы берём СМР до ЗОС. Надёжный генподрядчик в ваш пул.</p><a href="#partners">Партнёрство →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3b. КАКИЕ ВОПРОСЫ ЗАКАЗЧИКА РЕШАЕМ -->
+<section id="solve">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Решаем вопросы заказчика</span>
+      <h2>Какие вопросы заказчиков мы закрываем</h2>
+      <p>Крупный заказчик выбирает не самого большого подрядчика, а того, кто решит именно его задачу. Вот с чем к нам приходят — и что мы делаем.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card"><h3>«Проект сырой, часть разделов не готова — другие подрядчики отказываются»</h3><p>Заходим с непроработанным проектом: закрываем недостающие разделы вместе с проектировщиками и ведём стройку параллельно, не теряя времени. Так было на «Сатурне».</p></div>
+      <div class="card"><h3>«Оборудование уже заказано — опоздание означает простой и убытки»</h3><p>Привязываем график к дате поставки линии, критичные работы выводим вперёд. Так сдавали корпус для «Нева Металл Посуда».</p></div>
+      <div class="card"><h3>«Нужно строить рядом с действующим производством, останавливать его нельзя»</h3><p>Ведём работы без остановки текущего выпуска: логистику и шумные этапы планируем под режим действующего цеха.</p></div>
+      <div class="card"><h3>«Зайдут дёшево, а потом доберут доплатами или сорвут срок»</h3><p>Фиксируем смету и срок в договоре. Объём закреплён, изменения — только по согласованию, без скрытых доплат «по ходу».</p></div>
+      <div class="card"><h3>«Не хочу собирать и контролировать десяток субподрядчиков»</h3><p>Один генподрядчик и один центр ответственности за весь объект до ввода в эксплуатацию. Спрос — с нас, а не с подрядчиков.</p></div>
+      <div class="card"><h3>«Подрядчик незнакомый — как его проверить службе безопасности?»</h3><p>Открытое юрлицо, членство в саморегулируемой организации с допуском до 500 млн ₽, реальные кейсы с фото и референс от заказчика.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PAIN → ANSWER -->
+<section class="pa">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Главный страх заказчика</span>
+      <h2>На стройке пугает не цена — пугает срыв сроков и «подрядчик пропал»</h2>
+      <p>Самая частая ловушка: подрядчик выигрывает низкой ценой, а потом добирает доплатами или срывает срок — и объект встаёт. Мы строим наоборот.</p>
+    </div>
+    <div class="pa-row">
+      <div class="pa-col pa-pain">
+        <h3>Как бывает с другими</h3>
+        <ul>
+          <li>Выиграли дёшево на тендере — потом «дополнительные работы» и рост сметы на 20–40%</li>
+          <li>Сорвали срок — оборудование простаивает, запуск производства сдвинулся, деньги горят</li>
+          <li>Бросили объект на полпути / ушли в банкротство — стройка заморожена</li>
+          <li>Проект оказался сырым — подрядчик разводит руками, виноват заказчик</li>
+          <li>«Зоопарк» субподрядчиков без единой ответственности</li>
+        </ul>
+      </div>
+      <div class="pa-col pa-ans">
+        <h3>Как с «Вектором»</h3>
+        <ul>
+          <li>Фиксированная смета в договоре — без скрытых доплат «по ходу»</li>
+          <li>Срок закреплён договором, берём ответственность за его соблюдение</li>
+          <li>Единый генподрядчик и единый центр ответственности за весь объект</li>
+          <li>Сырой проект — доводим: закрываем недостающие разделы с проектировщиками (так было на «Сатурне»)</li>
+          <li>Свои бригады + контроль подрядчиков и качества на каждом этапе</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CASES -->
+<section id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Кейсы</span>
+      <h2>Доказательства, а не обещания</h2>
+      <p>Каждый объект разбираем по схеме: ситуация → сложности заказчика → как решали → результат → подтверждения (фото, документы, отзыв).</p>
+    </div>
+    <div class="cases">
+      <article class="case">
+        <div class="ph"><img src="https://volkovww-ui.github.io/vektor-preview/assets/img/saturn/warehouse-done.jpg" alt="Складской комплекс «Сатурн» — готовый корпус" loading="lazy"></div>
+        <div class="body">
+          <span class="chip">Складской комплекс для сети · флагман</span>
+          <h3>Сатурн</h3>
+          <p>Складской комплекс ~12 000 м² (2 корпуса) для торговой сети строительных материалов, бюджет порядка 1 млрд ₽. Зашли на объект с непроработанным проектом — закрыли недостающие разделы и довели до ЗОС.</p>
+          <div class="row">
+            <div><b>~12 000 м²</b>2 корпуса</div>
+            <div><b>~1 млрд ₽</b>бюджет</div>
+            <div><b>ЗОС</b>сдан</div>
+          </div>
+          <a class="link" href="https://volkovww-ui.github.io/vektor-preview/case-saturn.html">Разбор кейса →</a>
+        </div>
+      </article>
+      <article class="case">
+        <div class="ph"><span>фото / видео объекта</span><span>скоро</span></div>
+        <div class="body">
+          <span class="chip">Производственно-складской объект</span>
+          <h3>Нева Металл Посуда</h3>
+          <p>Строительство корпуса под запуск нового оборудования — рядом с действующим производством, без остановки выпуска и с привязкой к сроку поставки линии.</p>
+          <div class="row">
+            <div><b>под ключ</b>СМР до ЗОС</div>
+            <div><b>в срок</b>под поставку</div>
+            <div><b>сдан</b>в эксплуатации</div>
+          </div>
+          <a class="link" href="https://volkovww-ui.github.io/vektor-preview/case-neva.html">Разбор кейса →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. RESCUE (отстройка) -->
+<section class="rescue">
+  <div class="wrap narrow">
+    <span class="eyebrow">Чем отличаемся</span>
+    <h2>Заходим даже на непроработанный проект — и доводим до ЗОС</h2>
+    <p class="lead">Большинство подрядчиков работают только по готовому, «чистому» проекту. Если документация сырая или вы расстались с прошлым подрядчиком — для нас это нормальная ситуация. На «Сатурне» проект достался непроработанным: часть разделов отсутствовала. Мы закрыли пробелы с проектировщиками и довели объект до ввода.</p>
+    <div class="rescue-grid">
+      <div class="it"><b>Сырой проект</b><span>Закрываем недостающие разделы с партнёрами-проектировщиками</span></div>
+      <div class="it"><b>Чужой недострой</b><span>Принимаем объект за другим подрядчиком и доводим до ЗОС</span></div>
+      <div class="it"><b>Сжатый срок</b><span>Перестраиваем график под вашу дату запуска</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. RESPONSIBILITY / CYCLE -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Зона ответственности</span>
+      <h2>Честно: что делаем мы, а что — партнёры</h2>
+      <p>Полный цикл стройки — от земли до ввода в эксплуатацию. «Вектор» отвечает за строительно-монтажные работы и доведение объекта до ЗОС. Проектирование, изыскания и разрешение на строительство (РНС) ведут проверенные партнёры — это разделение фиксируем на старте.</p>
+    </div>
+    <div class="cycle">
+      <div class="cstep"><b>Земля</b>ГПЗУ, ТУ</div>
+      <div class="cstep"><b>Изыскания</b>геология</div>
+      <div class="cstep"><b>Проект</b>ПД / РД, экспертиза</div>
+      <div class="cstep"><b>РНС</b>разрешение</div>
+      <div class="cstep ours"><b>СМР</b>строительство</div>
+      <div class="cstep ours"><b>ЗОС</b>сдача</div>
+    </div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--graphite)"></span>зона «Вектора» — СМР до ЗОС (генподряд)</span>
+      <span><span class="dot" style="background:#fff;border:1px solid var(--line)"></span>зона партнёров — проектирование, изыскания, РНС</span>
+    </div>
+    <p class="note" style="margin-top:calc(var(--u)*3);font-size:.92rem;color:var(--muted);border-left:3px solid var(--accent);padding-left:14px;max-width:70ch">Термины не смешиваем: <b>РНС</b> — разрешение на начало стройки, <b>ЗОС</b> — заключение о соответствии (основание для ввода), <b>РВ</b> — финальный ввод в эксплуатацию. Зона «Вектора» заканчивается на ЗОС.</p>
+  </div>
+</section>
+
+<!-- 8. PROCESS TIMELINE -->
+<section style="background:var(--bg-alt)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Как проходит работа</span>
+      <h2>Прозрачный путь от заявки до сданного объекта</h2>
+      <p>На каждом шаге понятно, что происходит и что вы получаете на руки.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl"><h3>Заявка и вводные</h3><p>Изучаем участок, проект и задачу, уточняем срок и бюджет.</p></div>
+      <div class="tl"><h3>Смета и сроки</h3><p>Считаем по объекту, фиксируем стоимость и график. Бесплатно.</p></div>
+      <div class="tl"><h3>Договор</h3><p>Смета, сроки и ответственность закреплены документом.</p></div>
+      <div class="tl"><h3>СМР</h3><p>Организуем площадку, ведём работы и подрядчиков, контроль качества.</p></div>
+      <div class="tl"><h3>ЗОС</h3><p>Доводим объект до заключения о соответствии — основания для ввода.</p></div>
+      <div class="tl"><h3>Передача</h3><p>Сдаём объект с документами и пруфами, гарантийное сопровождение.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. OBJECT TYPES -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Что строим</span>
+      <h2>Промышленные и складские объекты под ключ</h2>
+    </div>
+    <div class="grid-4">
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/><path d="m7.5 4.27 9 5.15"/></svg></span><h3>Склады и складские комплексы</h3><p>Класса A/B, распределительные центры, в т.ч. температурные зоны.</p></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M7 18h0"/><path d="M12 18h0"/><path d="M17 18h0"/></svg></span><h3>Производственные здания и цеха</h3><p>Под установку оборудования и запуск производственных линий.</p></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span><h3>Логистические комплексы</h3><p>Под распределительные центры, логистических операторов и собственную логистику бизнеса.</p></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z"/><path d="M6 18h12"/><path d="M6 14h12"/><path d="M6 10h12"/></svg></span><h3>Ангары и лёгкая промышленность</h3><p>Быстровозводимые и каркасные объекты под лёгкое производство.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. WHY US / TRUST (для собственника и СБ) -->
+<section id="why" class="trust" style="background:var(--bg-alt)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Почему «Вектор» — надёжно</span>
+      <h2>Нас можно проверить — и доверить объект на сотни миллионов</h2>
+      <p>Крупный заказчик и служба безопасности проверяют подрядчика по делу. Вот на что мы отвечаем заранее.</p>
+    </div>
+    <div class="grid-4">
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg></span><h3>Беремся за сложные ситуации</h3><p>Сырой проект, жёсткий срок, стройка рядом с действующим производством — доводим до результата там, где другие пасуют. Не играем в размер ради размера.</p></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1Z"/><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><path d="M14 6a6 6 0 0 1 6 6v3"/></svg></span><h3>Сильная техническая команда</h3><p>Технический директор и инженеры, которые ведут объект и отвечают за решения, а не «менеджеры по телефону».</p></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span><h3>Допуски и документы</h3><p>Член саморегулируемой организации с допуском к генеральному подряду по договорам до 500 млн ₽, ответственность застрахована. Открытое юрлицо — готовы к проверке службой безопасности.</p></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/></svg></span><h3>Ответственность в договоре</h3><p>Фиксированная смета, закреплённые сроки, гарантийные обязательства — на бумаге, а не на словах.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10b. РУКОВОДСТВО -->
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Кто отвечает за объект</span>
+      <h2>Руководство, с которым вы работаете</h2>
+      <p>За компанию и за техническую часть отвечают конкретные люди, а не «менеджеры по телефону». Юрлицо открытое — данные руководства сверяются с реестром.</p>
+    </div>
+    <div class="team">
+      <div class="tcard">
+        <div class="tphoto"><img src="https://volkovww-ui.github.io/vektor-preview/assets/img/team/zhuravleva.jpg" alt="Журавлёва Татьяна Борисовна — генеральный директор СК «Вектор»" loading="lazy"></div>
+        <div class="tbody"><h3>Журавлёва Татьяна Борисовна</h3><div class="trole">Генеральный директор</div><p>Руководит компанией с основания. Отвечает за договорные обязательства, сроки и финансовую дисциплину на объекте.</p></div>
+      </div>
+      <div class="tcard">
+        <div class="tphoto tmono"><span>В</span></div>
+        <div class="tbody"><h3>Варламов Евгений Юрьевич</h3><div class="trole">Технический директор</div><p>Ведёт инженерные решения и стройку, выступает на отраслевых форумах. Закрывает техническую часть перед заказчиком и его экспертами.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. METHOD (для директора по строительству) -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Как держим срок и смету</span>
+      <h2>За графиком и качеством на площадке стоит метод, а не «авось»</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><h3>Единый центр ответственности</h3><p>За объект отвечает прораб-центр «Вектора», а не разрозненные подрядчики. С вас — одна точка спроса.</p></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg></span><h3>График под вашу дату</h3><p>Привязываем СМР к дате запуска/поставки оборудования; критичные работы выводим вперёд.</p></div>
+      <div class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span><h3>Контроль качества и сроков</h3><p>Свои бригады + ежедневный мониторинг, фотофиксация этапов, отчётность заказчику.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. FINANCE TRANSPARENCY (для финдиректора) -->
+<section style="background:var(--graphite);color:#e7ecf1">
+  <div class="wrap">
+    <span class="eyebrow">Прозрачно по деньгам</span>
+    <h2 style="color:#fff">Финансовому директору — без сюрпризов в смете</h2>
+    <div class="grid-3" style="margin-top:calc(var(--u)*3)">
+      <div class="card" style="background:var(--graphite-2);border-color:#333d47;color:#cdd5dd"><h3 style="color:#fff">Фиксированная смета</h3><p style="color:#9aa6b1">Стоимость закреплена в договоре. Расшифровка по статьям — видно, за что платите.</p></div>
+      <div class="card" style="background:var(--graphite-2);border-color:#333d47"><h3 style="color:#fff">Поэтапная оплата</h3><p style="color:#9aa6b1">Платежи привязаны к выполненным этапам, а не «всё вперёд».</p></div>
+      <div class="card" style="background:var(--graphite-2);border-color:#333d47"><h3 style="color:#fff">Без скрытых доплат</h3><p style="color:#9aa6b1">Объём работ зафиксирован. Изменения — только по согласованию, прозрачно.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13. PARTNERS -->
+<section id="partners" class="partners">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Партнёрам — техзаказчикам и проектировщикам</span>
+      <h2>Вы доводите проект до РНС — мы строим до ЗОС</h2>
+      <p>Если вы ведёте проектирование, ИРД и технадзор, вам нужен надёжный генподрядчик на СМР, который не подведёт вашего клиента. Это мы — и мы не лезем в вашу зону.</p>
+    </div>
+    <div class="box">
+      <div class="two">
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:8px">Чистая стыковка без конкуренции</h3>
+          <p style="font-size:.96rem">Своей проектной поляны мы не занимаем — проектирование, изыскания, РНС и авторский надзор остаются за вами. Мы закрываем то, чего вам не хватает: качественную стройку до ввода в эксплуатацию.</p>
+        </div>
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:8px">Усиливаем ваш продукт «до ввода»</h3>
+          <p style="font-size:.96rem">Ваша репутация перед заказчиком зависит от того, кто построит. Надёжный генподрядчик с фиксированными сроками и сметой делает ваше «сопровождение до ввода» полным.</p>
+        </div>
+      </div>
+      <div style="margin-top:calc(var(--u)*3)"><a href="#contact" class="btn btn-dark">Обсудить партнёрство →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14. REVIEWS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Отзывы и подтверждения</span>
+      <h2>Что говорят заказчики</h2>
+      <p>Реальные объекты, реальные руководители проектов. Готовы дать референс по запросу.</p>
+    </div>
+    <div class="grid-2">
+      <div class="quote">«[ Отзыв руководителя проекта «Сатурн» — Еремина И. Н. Готова дать референс. Текст добавим после интервью. ]»<cite>— Еремина Ирина Николаевна, руководитель проекта, «Сатурн»</cite></div>
+      <div class="quote">«[ Отзыв заказчика «Нева Металл Посуда» — есть видео выступления. Текст/видео добавим. ]»<cite>— заказчик, «Нева Металл Посуда»</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- 15. GEO -->
+<section style="background:var(--bg-alt)">
+  <div class="wrap narrow" style="text-align:center">
+    <span class="eyebrow">География</span>
+    <h2>Строим в Северо-Западном и Центральном округах</h2>
+    <p style="max-width:60ch;margin:8px auto 0">Базовый регион — Санкт-Петербург и Ленинградская область. Работаем по объектам Москвы и области, рассматриваем проекты по Центральной России. Где нужно — привлекаем местные ресурсы.</p>
+  </div>
+</section>
+
+<!-- 16. FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <span class="eyebrow">Вопросы</span>
+    <h2>Частые вопросы крупных заказчиков</h2>
+    <div class="faq-list">
+      <details class="qa"><summary>Кто отвечает за проектирование и разрешения?<span class="ic">+</span></summary><div class="ans"><p>«Вектор» отвечает за строительно-монтажные работы (генподряд) и доведение объекта до ЗОС. Проектирование, изыскания, экспертизу и РНС ведут проверенные партнёры. Разделение зон фиксируется на старте — вы всегда знаете, кто за что отвечает.</p></div></details>
+      <details class="qa"><summary>Как вы фиксируете цену и сроки — и что, если подрядчик их сорвёт?<span class="ic">+</span></summary><div class="ans"><p>Считаем смету по конкретному проекту, фиксируем стоимость и сроки в договоре, со взятой на себя ответственностью за их соблюдение. Это защищает вас от классической истории, когда подрядчик выигрывает низкой ценой, а потом добирает доплатами и срывает срок.</p></div></details>
+      <details class="qa"><summary>А если у нас сырой или неполный проект?<span class="ic">+</span></summary><div class="ans"><p>Беремся. На объекте «Сатурн» проект достался непроработанным — часть разделов отсутствовала. Мы закрыли недостающее вместе с проектировщиками и довели объект до ЗОС. Если вы расстались с прошлым подрядчиком — принимаем недострой и доводим до ввода.</p></div></details>
+      <details class="qa"><summary>Какого масштаба объекты вы строите?<span class="ic">+</span></summary><div class="ans"><p>От 1 000 до 50 000 м². Флагман — складской комплекс «Сатурн» порядка 12 000 м² и около 1 млрд ₽ бюджета. Строим склады, производственные цеха, логистические комплексы, ангары и объекты лёгкой промышленности.</p></div></details>
+      <details class="qa"><summary>Чем вы лучше тех, кто предлагает дешевле?<span class="ic">+</span></summary><div class="ans"><p>Самая низкая цена на тендере — частый сигнал риска: подрядчик заходит дёшево, а потом добирает доплатами или экономит на качестве и сроках. Мы продаём не низкую цену, а предсказуемый результат: фиксированную смету, соблюдённый срок и сданный объект.</p></div></details>
+      <details class="qa"><summary>Мы вас не знаем — как убедиться, что вам можно доверять?<span class="ic">+</span></summary><div class="ans"><p>Открытое юрлицо для проверки службой безопасности, членство в саморегулируемой организации с допуском к генподряду по договорам до 500 млн ₽, разбор реальных кейсов с пруфами, референс от руководителя проекта «Сатурн». Можем начать с понятного первого шага — выезда на объект и расчёта сметы.</p></div></details>
+      <details class="qa"><summary>Работаете ли вы с техзаказчиками и проектировщиками?<span class="ic">+</span></summary><div class="ans"><p>Да. Если вы ведёте проект и РНС, мы берём на себя СМР до ЗОС, оставляя авторский и технический надзор за вами. Готовы войти в ваш пул генподрядчиков по складам, производствам и объектам лёгкой промышленности.</p></div></details>
+      <details class="qa"><summary>В каких регионах работаете?<span class="ic">+</span></summary><div class="ans"><p>Северо-Запад (Санкт-Петербург, Ленинградская область) — базовый регион. Москва и область, объекты по Центральной России — по согласованию, при необходимости с привлечением местных ресурсов.</p></div></details>
+      <details class="qa"><summary>Что я получу на старте — до договора?<span class="ic">+</span></summary><div class="ans"><p>Бесплатный выезд на объект, оценку объёма и сроков и предварительную смету. Честно скажем, что в зоне «Вектора», а что — у партнёров, и какой следующий шаг.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 17. CTA + ФОРМА -->
+<section id="contact" class="cta">
+  <div class="wrap cta-grid">
+    <div>
+      <span class="eyebrow">Заявка</span>
+      <h2>Расскажите об объекте — оценим срок и смету</h2>
+      <p>Ответим, разберём задачу и предложим следующий шаг. Без спама и навязчивых звонков.</p>
+      <ul>
+        <li>Бесплатная первичная оценка объёма и сроков</li>
+        <li>Честно разделим зоны «Вектора» и партнёров</li>
+        <li>Перезвоним в рабочее время</li>
+      </ul>
+    </div>
+    <form id="leadForm" novalidate>
+      <div class="toggle">
+        <button type="button" class="on" data-role="Заказчик">Я заказчик</button>
+        <button type="button" data-role="Партнёр (техзаказчик/проектировщик)">Я партнёр</button>
+      </div>
+      <input type="hidden" id="role" name="role" value="Заказчик">
+      <div class="field"><label for="name">Имя</label><input id="name" name="name" placeholder="Как к вам обращаться" required></div>
+      <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" placeholder="+7 ___ ___-__-__" required></div>
+      <div class="field"><label for="type">Тип объекта</label>
+        <select id="type" name="type">
+          <option>Склад / складской комплекс</option><option>Производственный цех / здание</option>
+          <option>Логистический комплекс</option><option>Ангар / лёгкая промышленность</option><option>Другое</option>
+        </select>
+      </div>
+      <div class="field"><label for="region">Регион</label><input id="region" name="region" placeholder="Город / область"></div>
+      <div class="field"><label for="msg">Коротко о задаче</label><textarea id="msg" name="msg" placeholder="Что планируете строить, ориентировочные площадь, срок, есть ли проект"></textarea></div>
+      <label class="consent"><input type="checkbox" id="agree" required> Согласен на обработку персональных данных и принимаю <a href="https://volkovww-ui.github.io/vektor-preview/privacy.html" target="_blank" style="color:var(--accent-ink);text-decoration:underline">политику конфиденциальности</a></label>
+      <button type="submit" class="btn btn-primary">Отправить заявку →</button>
+      <div class="ok" id="ok">Спасибо! Заявка отправлена — перезвоним в рабочее время.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="logo"><span class="mark">➤</span> ВЕКТОР</div>
+        <p>Генеральный подряд промышленного и складского строительства. Строительно-монтажные работы под ключ — до ЗОС.</p>
+        <p>СЗФО + ЦФО</p>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="tel:+79052005143">+7 905 200-51-43</a>
+        <a href="mailto:info@sk-vector.com">info@sk-vector.com</a>
+        <p style="margin-top:10px">ООО «СК «Вектор»</p>
+        <p>ИНН 7801700536 · ОГРН 1217800094027</p>
+        <p>199155, Санкт-Петербург,<br>ул. Уральская, д. 10, к. 1, литера А</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="#about">О компании</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#how">Как работаем</a>
+        <a href="#partners">Партнёрам</a>
+      </div>
+      <div>
+        <h4>Кейсы</h4>
+        <a href="https://volkovww-ui.github.io/vektor-preview/case-saturn.html">Сатурн</a>
+        <a href="https://volkovww-ui.github.io/vektor-preview/case-neva.html">Нева Металл Посуда</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© <span id="yr"></span> СК «Вектор». Генеральный подряд промышленного и складского строительства. · <a href="https://volkovww-ui.github.io/vektor-preview/privacy.html">Политика конфиденциальности</a></div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('burger').addEventListener('click',function(){document.getElementById('menu').classList.toggle('open');});
+  document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('menu').classList.remove('open');});});
+  document.querySelectorAll('.qa').forEach(function(d){d.addEventListener('toggle',function(){if(d.open){document.querySelectorAll('.qa').forEach(function(o){if(o!==d)o.open=false;});}});});
+  // role toggle
+  document.querySelectorAll('.toggle button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.toggle button').forEach(function(x){x.classList.remove('on');});
+      b.classList.add('on'); document.getElementById('role').value=b.dataset.role;
+    });
+  });
+  // form: реальная отправка через FORM_ENDPOINT; пока пусто — fallback на письмо (лиды не теряются)
+  var FORM_ENDPOINT = ""; // TODO: вписать URL обработчика/CRM, когда будет
+  var FALLBACK_EMAIL = "info@sk-vector.com";
+  document.getElementById('leadForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=this, name=f.name.value.trim(), phone=f.phone.value.trim(), agree=f.agree.checked;
+    if(!name||!phone||!agree){alert('Заполните имя, телефон и согласие на обработку данных.');return;}
+    var data={role:f.role.value,name:name,phone:phone,type:f.type.value,region:f.region.value,msg:f.msg.value};
+    function done(){f.querySelector('button[type=submit]').style.display='none';document.getElementById('ok').style.display='block';}
+    if(FORM_ENDPOINT){
+      fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
+        .then(done).catch(function(){mailtoFallback(data);done();});
+    } else { mailtoFallback(data); done(); }
+    function mailtoFallback(d){
+      var body="Роль: "+d.role+"%0AИмя: "+d.name+"%0AТелефон: "+d.phone+"%0AТип: "+d.type+"%0AРегион: "+d.region+"%0AЗадача: "+d.msg;
+      window.location.href="mailto:"+FALLBACK_EMAIL+"?subject=Заявка с сайта (СК Вектор)&body="+body;
+    }
+  });
+</script>
+<script>
+(function(){if(!("IntersectionObserver" in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.1,rootMargin:"0px 0px -40px 0px"});document.querySelectorAll("section").forEach(function(s){s.classList.add("reveal");io.observe(s);});})();
+</script>
+<script>
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.cup'));if(!els.length)return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function fmt(n,sep){n=Math.round(n);return sep?n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,' '):n.toString();}
+  function run(el){var to=parseFloat(el.dataset.to||'0'),sep=el.dataset.sep==='1',dur=parseInt(el.dataset.dur||'1100',10),t0=null;
+    if(reduce){el.textContent=fmt(to,sep);return;}
+    function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1),e=1-Math.pow(1-p,3);el.textContent=fmt(to*e,sep);if(p<1)requestAnimationFrame(step);}
+    requestAnimationFrame(step);}
+  if(!('IntersectionObserver'in window)){els.forEach(run);return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(e.target);io.unobserve(e.target);}});},{threshold:.4});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
