@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"CHROME=\\\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\\\"\\nS=\\\"$HOME/Claude/tmp/shots\\\"\\n\\\"$CHROME\\\" --headless --disable-gpu --hide-scrollbars --window-size=1440,14500 --vir...",
+  "error": "Exit code 1",
+  "timestamp": "2026-06-15T08:58:21.770Z",
+  "retry_count": 2
+}
