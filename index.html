@@ -407,6 +407,20 @@
     .tcard{flex-direction:column;text-align:center;align-items:center}
     .statband .grid,.aud-grid,.grid-4,.kpis,.rgrid,.factbar,.photos,.proj,.rescue-grid{grid-template-columns:1fr}
   }
+
+  /* снятие перекоса масштаба: подпись под флагман-метриками */
+  .statband-note{margin-top:calc(var(--u)*2.5);font-size:.95rem;color:var(--muted);max-width:70ch}
+
+  /* мобильная панель действий — телефон + заявка всегда на экране (фикс мобильного первого экрана) */
+  .mbar{display:none}
+  @media(max-width:820px){
+    .mbar{display:grid;grid-template-columns:auto 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;
+      padding:10px calc(var(--u)*2);background:rgba(255,255,255,.97);border-top:1px solid var(--line);
+      box-shadow:0 -6px 18px rgba(13,17,21,.08);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+    .mbar .btn{padding:13px 16px;font-size:.9rem;width:100%;justify-content:center;letter-spacing:.03em}
+    .mbar .mbar-call{background:var(--graphite-2);color:#fff;border-color:var(--graphite-2)}
+    body{padding-bottom:74px}
+  }
 </style>
 </head>
 <body>
@@ -434,8 +448,8 @@
 <section class="hero">
   <div class="wrap">
     <span class="eyebrow">Генеральный подряд · промышленное и складское строительство · СЗФО + ЦФО</span>
-    <h1>Строим производственные и складские объекты под ключ — и <span class="hl">решаем вопросы заказчика</span></h1>
-    <p class="lead">Сырой проект, жёсткий срок под запуск оборудования, стройка рядом с действующим производством — для нас это рабочие задачи, а не повод поднять цену или сдвинуть график. Доводим объект до сдачи в эксплуатацию (получение ЗОС), фиксируем смету и срок в договоре. Доказываем не обещаниями, а сданными объектами.</p>
+    <h1>Строим склады и производства под ключ — и <span class="hl">сдаём в срок, даже если проект сырой</span></h1>
+    <p class="lead">Жёсткий срок под запуск оборудования, стройка рядом с действующим цехом, недоработанная документация — для нас это рабочие задачи, а не повод поднять цену или сдвинуть график. Доводим объект до сдачи в эксплуатацию (получение ЗОС), фиксируем смету и срок в договоре. Доказываем не обещаниями, а сданными объектами.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">Обсудить объект →</a>
       <a href="#cases" class="btn btn-dark">Смотреть кейсы</a>
@@ -458,6 +472,7 @@
       <div><div class="num">до <span class="accent">ЗОС</span></div><div class="lbl">полный цикл СМР под ключ</div></div>
       <div><div class="num"><span class="cup" data-to="2" data-dur="700">0</span> <span class="accent">округа</span></div><div class="lbl">Северо-Запад и Центр</div></div>
     </div>
+    <p class="statband-note">«Сатурн» — наш флагман по масштабу. Беремся и за средние объекты: от отдельного производственного корпуса до складского комплекса (от 1 000 м²).</p>
   </div>
 </section>
 
@@ -823,7 +838,7 @@
       <div class="field"><label for="region">Регион</label><input id="region" name="region" placeholder="Город / область"></div>
       <div class="field"><label for="msg">Коротко о задаче</label><textarea id="msg" name="msg" placeholder="Что планируете строить, ориентировочные площадь, срок, есть ли проект"></textarea></div>
       <label class="consent"><input type="checkbox" id="agree" required> Согласен на обработку персональных данных и принимаю <a href="privacy.html" target="_blank" style="color:var(--accent-ink);text-decoration:underline">политику конфиденциальности</a></label>
-      <button type="submit" class="btn btn-primary">Отправить заявку →</button>
+      <button type="submit" class="btn btn-primary">Получить расчёт срока и сметы →</button>
       <div class="ok" id="ok">Спасибо! Заявка отправлена — перезвоним в рабочее время.</div>
     </form>
   </div>
@@ -908,5 +923,11 @@ if(!('IntersectionObserver'in window)){els.forEach(run);return;}
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(e.target);io.unobserve(e.target);}});},{threshold:.4});
 els.forEach(function(el){io.observe(el);});})();
 </script>
+
+<!-- Мобильная панель действий: телефон + заявка всегда на экране -->
+<div class="mbar" role="navigation" aria-label="Быстрые действия">
+  <a href="tel:+79052005143" class="btn mbar-call">Позвонить</a>
+  <a href="#contact" class="btn btn-primary">Обсудить объект</a>
+</div>
 </body>
 </html>
